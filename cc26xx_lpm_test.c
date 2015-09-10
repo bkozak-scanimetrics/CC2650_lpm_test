@@ -202,7 +202,7 @@ PROCESS_THREAD(lpm_test_process, ev, data){
 			if(ev == lpm_wake_event) {
 				printf("woke\n");
 			} else if(ev == lpm_shutdown_event) {
-				PRINTF("wake\n");
+				PRINTF("slept\n");
 			}
 			PROCESS_YIELD();
 		}
